@@ -1,4 +1,4 @@
-package com.lion.lec.day0224;
+package com.lec.day0224;
 
 class Problem33_2 {
     public static void main(String[] args) {

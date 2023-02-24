@@ -1,4 +1,4 @@
-package com.lion.lec.day0224;
+package com.lec.day0224;
 // 정답확인 : https://replit.com/@jangka512/DroopyScentedIntelligence#Main.java
 
 public class Problem33_1 {
