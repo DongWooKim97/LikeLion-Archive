@@ -1,4 +1,4 @@
-package lec.day0224.probelm33_1;
+package lec.day0224.problem33.probelm33_1;
 // 정답확인 : https://replit.com/@jangka512/DroopyScentedIntelligence#Main.java
 
 public class Main {
@@ -31,7 +31,7 @@ class Soldier {
         } else {
             this.levelType = "병장";
         }
-        System.out.println("안녕하세요. 저는 " +this.name + this.levelType + " 입니다.");
+        System.out.println("안녕하세요. 저는 " + this.name + this.levelType + " 입니다.");
     }
 
     void levelUp() {

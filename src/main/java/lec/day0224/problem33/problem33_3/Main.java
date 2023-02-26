@@ -1,34 +1,27 @@
-package lec.day0224.problem33_2;
+package lec.day0224.problem33.problem33_3;
 
+// 정답확인 : https://replit.com/@jangka512/OverdueWirelessSets#Main.java
 public class Main {
+
     public static void main(String[] args) {
-        병사1 a병사 = new 병사1();
+        병사2 a병사 = new 병사2();
         a병사.이름 = "홍길동";
 
         a병사.자기소개();
         a병사.공격();
-//        // 홍길동 이병이 공격합니다.(공격력 : 7)
-//
         a병사.진급();
-//
         a병사.자기소개();
-//        // 안녕하세요. 저는 홍길동 일병 입니다.
         a병사.공격();
-//        // 홍길동 일병이 공격합니다.(공격력 : 9)
-//
         a병사.진급();
-//
         a병사.자기소개();
-//        // 안녕하세요. 저는 홍길동 상병 입니다.
         a병사.공격();
-        // 홍길동 상병이 공격합니다.(공격력 : 11)
+
     }
 }
 
-class 병사1 {
+class 병사2 {
     String 이름;
     int 계급 = 1;
-
 
     void 자기소개() {
         System.out.println("안녕하세요. 저는 " + this.이름 + this.get계급() + "입니다.");
@@ -63,6 +56,5 @@ class 병사1 {
         }
         return "병장";
     }
-
 
 }

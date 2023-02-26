@@ -1,4 +1,4 @@
-package lec.day0224.problem24_5;
+package lec.day0224.problem24.problem24_5;
 
 // 문제 : 클래스 5개 이상 만들고 각각을 객체화 하여 메서드를 호출해주세요
 
