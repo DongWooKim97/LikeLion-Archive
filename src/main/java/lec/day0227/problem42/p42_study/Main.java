@@ -7,8 +7,30 @@ public class Main {
 
         Lion l = new Lion();
         System.out.println(l);
+    }
+}
 
-        /*
+class Lion extends Object {
+    private String name = "멋쟁이사자처럼";
+
+    @Override
+    public String toString() {
+        return "Lion{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
+
+class Person extends Object {
+
+    public String toString() {
+        return "메롱";
+    }
+}
+
+
+
+/*
         public String toString() {}
  -> Object 클래스를 객체하고 오버라이드
 
@@ -32,20 +54,3 @@ sout -> 무조건 문장화가 되어야 한다
 자바는 어떠한 객체가 문장화 되어야하는 상황이면 자동으로
 클래스 안의 toString으로 호출됨
 */
-
-
-    }
-}
-
-class Person extends Object {
-
-    public String toString() {
-        return "메롱";
-    }
-}
-
-class Lion extends Object {
-    public String toString() {
-        return "으르렁";
-    }
-}
