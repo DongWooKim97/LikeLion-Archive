@@ -1,9 +1,9 @@
 package lec.day0228.problem61.p61_resolve;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 
 // my re-solve
@@ -25,8 +25,6 @@ public class Main {
 
         sc.close();
 
-        Collections.sort(al);
-
         System.out.println("입력을 종료합니다.");
         if (al.size() == 0) {
             System.out.println("입력한 숫자가 없습니다.");
@@ -34,16 +32,25 @@ public class Main {
             System.out.print("입력한 숫자 (오름차순) : ");
         }
 
-        StringBuilder sb = new StringBuilder();
+        String result = al.stream()
+                .sorted()
+                .map(e -> "" + e)
+                .collect(Collectors.joining(", "));
 
-        for (int x : al) {
-            if (!sb.isEmpty()) {
-                sb.append(", ");
-            }
-            sb.append(x);
-        }
+        System.out.println(result);
 
-        System.out.println(sb);
+
+        //my sovel 1 -StringBuilder
+//        StringBuilder sb = new StringBuilder();
+//
+//        for (int x : al) {
+//            if (!sb.isEmpty()) {
+//                sb.append(", ");
+//            }
+//            sb.append(x);
+//        }
+
+//        System.out.println(sb);
 
     }
 }
